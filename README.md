@@ -1,7 +1,7 @@
 # IntelliJ Redwood Plugin
 
-[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/00000-redwood)](https://plugins.jetbrains.com/plugin/00000-redwood)
-[![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/00000-redwood)](https://plugins.jetbrains.com/plugin/00000-redwood/versions)
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/21378-redwood)](https://plugins.jetbrains.com/plugin/21378-redwood)
+[![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/21378-redwood)](https://plugins.jetbrains.com/plugin/21378-redwood/versions)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/KartanHQ/intellij-redwood/build.yml?branch=master)](https://github.com/KartanHQ/intellij-redwood/actions/workflows/build.yml)
 [![GitHub](https://img.shields.io/github/license/KartanHQ/intellij-redwood)](https://github.com/KartanHQ/intellij-redwood/blob/master/LICENSE)
 [![Twitter Follow](https://img.shields.io/badge/follow-%40nekofar-1DA1F2?logo=twitter&style=flat)](https://twitter.com/nekofar)
