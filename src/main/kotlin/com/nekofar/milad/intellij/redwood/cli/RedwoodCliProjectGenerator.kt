@@ -14,40 +14,25 @@ class RedwoodCliProjectGenerator : NpmPackageProjectGenerator() {
     private val packageName = "create-redwood-app"
     private val npxCommand = "create-redwood-app"
 
-    override fun getName(): String {
-        return RedwoodBundle.message("redwood.project.generator.name")
-    }
+    override fun getName(): String = RedwoodBundle.message("redwood.project.generator.name")
 
-    override fun getDescription(): String {
-        return RedwoodBundle.message("redwood.project.generator.description")
-    }
+    override fun getDescription(): String = RedwoodBundle.message("redwood.project.generator.description")
 
-    override fun filters(project: Project, baseDir: VirtualFile): Array<Filter> {
-        return emptyArray()
-    }
+    override fun filters(project: Project, baseDir: VirtualFile): Array<Filter> = emptyArray()
 
-    override fun customizeModule(p0: VirtualFile, p1: ContentEntry?) {}
+    override fun customizeModule(virtualFile: VirtualFile, contentEntry: ContentEntry?) {}
 
-    override fun packageName(): String {
-        return packageName
-    }
+    override fun packageName(): String = packageName
 
-    override fun presentablePackageName(): String {
-        return RedwoodBundle.message("redwood.project.generator.presentable.package.name")
-    }
+    override fun presentablePackageName(): String =
+        RedwoodBundle.message("redwood.project.generator.presentable.package.name")
 
     override fun getNpxCommands() = listOf(NpxPackageDescriptor.NpxCommand(packageName, npxCommand))
 
+    override fun generateInTemp(): Boolean = true
 
-    override fun generateInTemp(): Boolean {
-        return true
-    }
+    override fun generatorArgs(project: Project?, dir: VirtualFile?, settings: Settings?): Array<String> =
+        arrayOf(project?.name.toString())
 
-    override fun generatorArgs(project: Project?, dir: VirtualFile?, settings: Settings?): Array<String> {
-        return arrayOf(project?.name.toString())
-    }
-
-    override fun getIcon(): Icon {
-        return RedwoodIcons.ProjectGenerator
-    }
+    override fun getIcon(): Icon = RedwoodIcons.ProjectGenerator
 }
