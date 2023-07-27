@@ -5,5 +5,7 @@ import com.intellij.lang.javascript.boilerplate.JavaScriptNewTemplatesFactoryBas
 import com.intellij.platform.ProjectTemplate
 
 class RedwoodProjectTemplateFactory : JavaScriptNewTemplatesFactoryBase() {
-    override fun createTemplates(context: WizardContext?): Array<ProjectTemplate> = arrayOf(RedwoodCliProjectGenerator())
+    override fun createTemplates(context: WizardContext?): Array<ProjectTemplate> = arrayOf(
+        RedwoodCliProjectGenerator()
+    )
 }
